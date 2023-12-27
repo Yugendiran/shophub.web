@@ -1,3 +1,4 @@
+import type { NuxtLink } from '#build/components';
 <template>
   <div>
     <div
@@ -24,29 +25,38 @@
         </ul>
       </div>
       <div class="hidden lg:block">
-        <div class="flex items-center gap-3">
-          <div class="relative">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="relative">
-            <i class="fa-solid fa-heart"></i>
-            <div
-              class="absolute -top-2 -right-2 h-3 w-3 rounded-full bg-black text-white text-[8px] flex justify-center items-center font-medium"
-            >
-              2
+        <div class="flex items-center gap-3 mt-10 w-full justify-evenly">
+          <NuxtLink to="/products">
+            <div class="relative">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-          </div>
-          <div class="relative">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <div
-              class="absolute -top-2 -right-2 h-3 w-3 rounded-full bg-black text-white text-[8px] flex justify-center items-center font-medium"
-            >
-              2
+          </NuxtLink>
+          <NuxtLink to="/wishlist">
+            <div class="relative">
+              <i class="fa-solid fa-heart"></i>
+              <div
+                class="absolute -top-2 -right-2 h-3 w-3 rounded-full bg-black text-white text-[8px] flex justify-center items-center font-medium"
+              >
+                2
+              </div>
             </div>
-          </div>
-          <div class="relative">
-            <i class="fa-solid fa-user"></i>
-          </div>
+          </NuxtLink>
+          <NuxtLink to="/cart">
+            <div class="relative">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div
+                class="absolute -top-2 -right-2 h-3 w-3 rounded-full bg-black text-white text-[8px] flex justify-center items-center font-medium"
+              >
+                2
+              </div>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="/profile">
+            <div class="relative">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -79,28 +89,37 @@
         </div>
 
         <div class="flex items-center gap-3 mt-10 w-full justify-evenly">
-          <div class="relative">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="relative">
-            <i class="fa-solid fa-heart"></i>
-            <div
-              class="absolute -top-2 -right-2 h-3 w-3 rounded-full bg-black text-white text-[8px] flex justify-center items-center font-medium"
-            >
-              2
+          <NuxtLink to="/products">
+            <div class="relative">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-          </div>
-          <div class="relative">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <div
-              class="absolute -top-2 -right-2 h-3 w-3 rounded-full bg-black text-white text-[8px] flex justify-center items-center font-medium"
-            >
-              2
+          </NuxtLink>
+          <NuxtLink to="/wishlist">
+            <div class="relative">
+              <i class="fa-solid fa-heart"></i>
+              <div
+                class="absolute -top-2 -right-2 h-3 w-3 rounded-full bg-black text-white text-[8px] flex justify-center items-center font-medium"
+              >
+                2
+              </div>
             </div>
-          </div>
-          <div class="relative">
-            <i class="fa-solid fa-user"></i>
-          </div>
+          </NuxtLink>
+          <NuxtLink to="/cart">
+            <div class="relative">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div
+                class="absolute -top-2 -right-2 h-3 w-3 rounded-full bg-black text-white text-[8px] flex justify-center items-center font-medium"
+              >
+                2
+              </div>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="/profile">
+            <div class="relative">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>

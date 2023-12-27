@@ -203,5 +203,48 @@
       </div>
     </section>
     <!-- Product List -->
+
+    <!-- Offers Section -->
+    <section>
+      <div class="h-auto w-full bg-red-100 swiper offersSwiper">
+        <div class="swiper-wrapper">
+          <div
+            v-for="n in 5"
+            :key="n"
+            class="p-5 text-center flex justify-center items-center flex-col swiper-slide"
+          >
+            <p class="font-medium mb-5">Best Collection {{ n }}</p>
+            <h1 class="text-2xl font-bold text-center mb-5">
+              Get 50% off on your first order
+            </h1>
+            <span
+              class="font-medium underline decoration-2 decoration-red-500 underline-offset-8"
+              >Shop Now</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Offers Section -->
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      swipers: {
+        offersSwiper: null,
+      },
+    };
+  },
+  mounted() {
+    this.swipers.offersSwiper = new window.Swiper(".offersSwiper", {
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+    });
+  },
+};
+</script>
