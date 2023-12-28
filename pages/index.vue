@@ -4,12 +4,12 @@
 
     <!-- Categories Section -->
     <section>
-      <div class="w-full min-h-screen grid lg:grid-cols-2 gap-4">
+      <div class="grid w-full min-h-screen gap-4 lg:grid-cols-2">
         <div
           class="h-[300px] lg:h-full w-full bg-[#fae3d9] flex flex-col justify-center p-5"
         >
-          <h1 class="text-2xl mb-3 font-bold">Women's Fashion</h1>
-          <p class="text-sm mb-5">
+          <h1 class="mb-3 text-2xl font-bold">Women's Fashion</h1>
+          <p class="mb-5 text-sm">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
             deleniti in qui quaerat animi ipsum corrupti sunt tempora
             necessitatibus fugiat?
@@ -19,12 +19,12 @@
             >Shop Now</span
           >
         </div>
-        <div class="grid sm:grid-cols-2 h-full w-full gap-4">
+        <div class="grid w-full h-full gap-4 sm:grid-cols-2">
           <div
             class="h-[300px] lg:h-full w-full bg-[#bee2d6] flex flex-col justify-center p-5"
           >
-            <h1 class="text-2xl mb-3 font-bold">Men's Fashion</h1>
-            <p class="text-sm mb-5">
+            <h1 class="mb-3 text-2xl font-bold">Men's Fashion</h1>
+            <p class="mb-5 text-sm">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
               deleniti in qui quaerat animi ipsum corrupti sunt tempora
               necessitatibus fugiat?
@@ -37,8 +37,8 @@
           <div
             class="h-[300px] lg:h-full w-full bg-[#d6d3f0] flex flex-col justify-center p-5"
           >
-            <h1 class="text-2xl mb-3 font-bold">Kid's Fashion</h1>
-            <p class="text-sm mb-5">
+            <h1 class="mb-3 text-2xl font-bold">Kid's Fashion</h1>
+            <p class="mb-5 text-sm">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
               deleniti in qui quaerat animi ipsum corrupti sunt tempora
               necessitatibus fugiat?
@@ -51,8 +51,8 @@
           <div
             class="h-[300px] lg:h-full w-full bg-[#fedbe4] flex flex-col justify-center p-5"
           >
-            <h1 class="text-2xl mb-3 font-bold">Cosmetics</h1>
-            <p class="text-sm mb-5">
+            <h1 class="mb-3 text-2xl font-bold">Cosmetics</h1>
+            <p class="mb-5 text-sm">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
               deleniti in qui quaerat animi ipsum corrupti sunt tempora
               necessitatibus fugiat?
@@ -65,8 +65,8 @@
           <div
             class="h-[300px] lg:h-full w-full bg-[#cee2f5] flex flex-col justify-center p-5"
           >
-            <h1 class="text-2xl mb-3 font-bold">Accessories</h1>
-            <p class="text-sm mb-5">
+            <h1 class="mb-3 text-2xl font-bold">Accessories</h1>
+            <p class="mb-5 text-sm">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
               deleniti in qui quaerat animi ipsum corrupti sunt tempora
               necessitatibus fugiat?
@@ -84,9 +84,9 @@
     <!-- Product List -->
     <section class="my-20">
       <div class="px-5 mx-auto max-w-7xl">
-        <div class="md:flex items-center justify-between mb-5">
+        <div class="items-center justify-between mb-5 md:flex">
           <h1 class="text-2xl font-bold">New Products</h1>
-          <ul class="flex items-center text-lg gap-3 flex-wrap">
+          <ul class="flex flex-wrap items-center gap-3 text-lg">
             <li
               class="underline decoration-2 decoration-red-500 underline-offset-8"
             >
@@ -103,34 +103,34 @@
             <h2 class="sr-only">Products</h2>
 
             <div
-              class="-mx-px grid grid-cols-2 border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4"
+              class="grid grid-cols-2 -mx-px border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4"
             >
               <div
                 v-for="n in 10"
                 :key="n"
-                class="group relative border border-gray-200 p-4 sm:p-6"
+                class="relative p-4 border border-gray-200 group sm:p-6"
               >
                 <div
-                  class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75"
+                  class="overflow-hidden bg-gray-200 rounded-lg aspect-h-1 aspect-w-1 group-hover:opacity-75"
                 >
                   <img
                     src="https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg"
                     alt="TODO"
-                    class="h-full w-full object-cover object-center"
+                    class="object-cover object-center w-full h-full"
                   />
                 </div>
-                <div class="pb-4 pt-10 text-center">
+                <div class="pt-10 pb-4 text-center">
                   <h3 class="text-sm font-medium text-gray-900">
                     <a href="#">
                       <span aria-hidden="true" class="absolute inset-0"></span>
                       Organize Basic Set (Walnut)
                     </a>
                   </h3>
-                  <div class="mt-3 flex flex-col items-center">
+                  <div class="flex flex-col items-center mt-3">
                     <p class="sr-only">5 out of 5 stars</p>
                     <div class="flex items-center">
                       <svg
-                        class="text-yellow-400 h-5 w-5 flex-shrink-0"
+                        class="flex-shrink-0 w-5 h-5 text-yellow-400"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -142,7 +142,7 @@
                         />
                       </svg>
                       <svg
-                        class="text-yellow-400 h-5 w-5 flex-shrink-0"
+                        class="flex-shrink-0 w-5 h-5 text-yellow-400"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -154,7 +154,7 @@
                         />
                       </svg>
                       <svg
-                        class="text-yellow-400 h-5 w-5 flex-shrink-0"
+                        class="flex-shrink-0 w-5 h-5 text-yellow-400"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -166,7 +166,7 @@
                         />
                       </svg>
                       <svg
-                        class="text-yellow-400 h-5 w-5 flex-shrink-0"
+                        class="flex-shrink-0 w-5 h-5 text-yellow-400"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -178,7 +178,7 @@
                         />
                       </svg>
                       <svg
-                        class="text-yellow-400 h-5 w-5 flex-shrink-0"
+                        class="flex-shrink-0 w-5 h-5 text-yellow-400"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -206,15 +206,15 @@
 
     <!-- Offers Section -->
     <section>
-      <div class="h-auto w-full bg-red-100 swiper offersSwiper">
+      <div class="w-full h-auto bg-red-100 swiper offersSwiper">
         <div class="swiper-wrapper">
           <div
             v-for="n in 5"
             :key="n"
-            class="p-5 text-center flex justify-center items-center flex-col swiper-slide"
+            class="flex flex-col items-center justify-center p-5 text-center swiper-slide"
           >
-            <p class="font-medium mb-5">Best Collection {{ n }}</p>
-            <h1 class="text-2xl font-bold text-center mb-5">
+            <p class="mb-5 font-medium">Best Collection {{ n }}</p>
+            <h1 class="mb-5 text-2xl font-bold text-center">
               Get 50% off on your first order
             </h1>
             <span
