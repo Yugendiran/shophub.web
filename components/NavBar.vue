@@ -2,7 +2,7 @@ import type { NuxtLink } from '#build/components';
 <template>
   <div>
     <div
-      class="h-20 w-full bg-white shadow-xl flex justify-between items-center px-5"
+      class="flex items-center justify-between w-full h-20 px-5 bg-white shadow-xl"
     >
       <div>
         <img
@@ -13,19 +13,19 @@ import type { NuxtLink } from '#build/components';
       <div>
         <div
           @click="isSidebarOpened = !isSidebarOpened"
-          class="h-8 w-8 border-2 border-black rounded-md flex items-center justify-center lg:hidden"
+          class="flex items-center justify-center w-8 h-8 border-2 border-black rounded-md lg:hidden"
         >
           <i class="fa-solid fa-bars"></i>
         </div>
 
-        <ul class="hidden lg:flex gap-3 text-lg font-medium">
+        <ul class="hidden gap-3 text-lg font-medium lg:flex">
           <li v-for="(item, index) in menuItems" :key="index">
             <NuxtLink :to="item.route">{{ item.name }}</NuxtLink>
           </li>
         </ul>
       </div>
       <div class="hidden lg:block">
-        <div class="flex items-center gap-3 mt-10 w-full justify-evenly">
+        <div class="flex items-center w-full gap-3 mt-10 justify-evenly">
           <NuxtLink to="/products">
             <div class="relative">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -67,14 +67,14 @@ import type { NuxtLink } from '#build/components';
       ref="modal"
     >
       <div class="h-full w-[80%] max-w-[320px] bg-white p-5" ref="modalItem">
-        <div class="flex justify-between items-center">
+        <div class="flex items-center justify-between">
           <img
             src="https://preview.colorlib.com/theme/ashion/img/logo.png.webp"
             alt=""
           />
           <div
             @click="isSidebarOpened = !isSidebarOpened"
-            class="h-10 w-10 rounded-full border border-black flex justify-center items-center"
+            class="flex items-center justify-center w-10 h-10 border border-black rounded-full"
           >
             <i class="fa-solid fa-xmark"></i>
           </div>
@@ -88,7 +88,7 @@ import type { NuxtLink } from '#build/components';
           </ul>
         </div>
 
-        <div class="flex items-center gap-3 mt-10 w-full justify-evenly">
+        <div class="flex items-center w-full gap-3 mt-10 justify-evenly">
           <NuxtLink to="/products">
             <div class="relative">
               <i class="fa-solid fa-magnifying-glass"></i>
